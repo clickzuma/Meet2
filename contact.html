@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="left-side">
+        <a href="index.html"><img src="assets/navbar logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!--xNAVBARx-->
+
+    <div class="contact-form">
+        
+      <!--CC = Contact Container-->
+      <div class="cc-form">
+          
+          <form action="">
+              <p>GET IN TOUCH</p>
+              <div>
+                  <label for="contactName">Name</label>
+                  <input id="contactName" type="text">
+              </div>
+              <div>
+                  <label for="contactEmail">E-mail</label>
+                  <input id="contactEmail" type="email">
+              </div>
+              <div>
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" id="phoneNumber" pattern="[0-9]">
+              </div>
+              <div>
+                  <label for="contactSubject">Subject</label>
+                  <select name="subject" id="contactSubject">
+                      <option hidden></option>
+                      <option>Let's Talk</option>
+                      <option>Let's colaborate</option>
+                      <option>I'm Hiring</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="contactMessage">Your message</label>
+                  <textarea name="contactMessage" id="contactMessage"></textarea>
+              </div>
+             
+              
+                  <button onclick="submitForm()" type="button">Submit</button>
+             
+          </form>
+
+          <script src="index.contactme.js">
+              const form = document=querySelector('')
+
+          </script>
+          
+  </body>
+</html>

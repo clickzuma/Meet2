@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(assets/bgblack.png) no-repeat center;
+  background-size: cover;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  height: 8.5vh;
+  background-color: #24252a;
+  width: 100%;
+}
+
+/* align items untuk setting vertical */
+/* nav div untuk left and right side */
+nav div {
+  align-items: center;
+  display: flex;
+}
+
+nav .left-side {
+  flex: 50%;
+  padding-left: 90px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+/* inline untuk display 1 baris home dan blog */
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .right-side {
+  flex: 50%;
+
+  justify-content: flex-end;
+  text-decoration: none;
+  padding-right: 90px;
+}
+
+nav .right-side a {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  color: #f2f2f2;
+  overflow: hidden;
+  transition: 0.2s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 3px 3px;
+}
+
+nav .right-side a:hover {
+  color: #f2f2f2;
+  background: #e66767;
+  box-shadow: 0 0 10px #e66767, 0 0 40px #e66767, 0 0 80px #e66767;
+}
+
+nav .left-side ul li a {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  color: #f2f2f2;
+  overflow: hidden;
+  transition: 0.2s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+nav .left-side ul li a:hover {
+  color: #f2f2f2;
+  background: #e66767;
+  box-shadow: 0 0 10px #e66767, 0 0 40px #e66767, 0 0 80px #e66767;
+}
+
+nav .left-side a img {
+  width: 130px;
+  align-items: center;
+}
+
+/* x NAVBAR x */
+/* FORM */
+
+.cc-form p {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  color: #f2f2f2;
+}
+
+.contact-form {
+  background-color: #24252a;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow: hidden;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.contact-form label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.contact-form input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 26%);
+}
+
+.contact-form form select,
+.contact-form form textarea {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 26%);
+}
+
+.contact-form form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 8px;
+  background-size: 30px;
+  background-color: white;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: lightgrey;
+  border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  float: right;
+  padding: 10px 25px;
+  color: black;
+
+  font-size: 17px;
+  border: 5px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.contact-form button:hover {
+  color: #f2f2f2;
+  background: #e66767;
+  box-shadow: 0 0 10px #e66767, 0 0 40px #e66767, 0 0 80px #e66767;
+}
+
+/* AKHIR FORM */

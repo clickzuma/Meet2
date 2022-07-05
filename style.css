@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(assets/bgblack.png) no-repeat center;
+  background-size: cover;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  height: 8.5vh;
+  background-color: #24252a;
+  width: 100%;
+}
+
+/* align items untuk setting vertical */
+/* nav div untuk left and right side */
+nav div {
+  align-items: center;
+  display: flex;
+}
+
+nav .left-side {
+  flex: 50%;
+  padding-left: 90px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+/* inline untuk display 1 baris home dan blog */
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .right-side {
+  flex: 50%;
+
+  justify-content: flex-end;
+  text-decoration: none;
+  padding-right: 90px;
+}
+
+nav .right-side a {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  color: #f2f2f2;
+  overflow: hidden;
+  transition: 0.2s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 3px 3px;
+}
+
+nav .right-side a:hover {
+  color: #f2f2f2;
+  background: #e66767;
+  box-shadow: 0 0 10px #e66767, 0 0 40px #e66767, 0 0 80px #e66767;
+}
+
+nav .left-side ul li a {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  color: #f2f2f2;
+  overflow: hidden;
+  transition: 0.2s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+nav .left-side ul li a:hover {
+  color: #f2f2f2;
+  background: #e66767;
+  box-shadow: 0 0 10px #e66767, 0 0 40px #e66767, 0 0 80px #e66767;
+}
+
+nav .left-side a img {
+  width: 130px;
+  align-items: center;
+}
+
+/* x NAVBAR x */
+
+/* Personal Card */
+
+.pc-container {
+  display: flex;
+  width: 85%;
+  height: 75%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.pc-container .personal-card {
+  width: 90%;
+  display: flex;
+}
+
+.pc-container .personal-card .pc-left {
+  flex: 60%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pc-container .personal-card .pc-left .pc-title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0px;
+  color: #f2f2f2;
+}
+
+.pc-container .personal-card .pc-left .pc-about {
+  text-align: justify;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.pc-container .personal-card .pc-left .pc-btn {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-contact a {
+  padding: 10px 20px;
+
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  color: #f2f2f2;
+  padding: 6px 20px;
+  border: 2px solid;
+  border-radius: 9px;
+  transition: 0.3s linear;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-contact a:hover {
+  background: #e66767;
+  color: #f2f2f2;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-cv a {
+  padding: 10px 20px;
+  background-color: var(--btn);
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  color: #f2f2f2;
+  padding: 6px 20px;
+  border: 2px solid;
+  border-radius: 8px;
+  transition: 0.3s linear;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pc-container .personal-card .pc-left .pc-btn .pc-cv a:hover {
+  background: #e66767;
+  color: #f2f2f2;
+}
+
+.pc-container .personal-card .pc-left .pc-sm {
+  display: flex;
+  font-size: 40px;
+
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.pc-container .personal-card .pc-left .pc-sm a {
+  transition: 0.3s linear;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.pc-container .personal-card .pc-left .pc-sm a:hover {
+  color: #e66767;
+}
+
+.pc-container .personal-card .pc-left .pc-sm i {
+  text-decoration: none;
+  color: var(--icon);
+}
+
+.pc-container .personal-card .pc-left .pc-sm i:hover {
+  color: var(--btn-hover);
+}
+
+.pc-container .personal-card .pc-right {
+  flex: 40%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.pc-container .personal-card .pc-right .pc-me {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+  text-align: center;
+}
+
+.pc-container .personal-card .pc-right .pc-me img {
+  width: 100%;
+}
+
+.pc-container .personal-card .pc-right .pc-me p {
+  color: #f2f2f2;
+  margin: 10px 0px 5px 0px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.pc-container .personal-card .pc-right .pc-me h4 {
+  color: #f2f2f2;
+  margin: 5px 0px 10px 0px;
+}
+
+/* x Personal Card x */
